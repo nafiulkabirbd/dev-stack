@@ -1,4 +1,4 @@
-export interface TechDataTypes {
+export default interface TechDataTypes {
   id: number;
   name: string;
   description: string;
