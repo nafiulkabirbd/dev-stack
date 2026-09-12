@@ -7,6 +7,7 @@ import StackSidebar from "./components/Technologies/StackSidebar";
 import type TechDataTypes from "./types/TechDataTypes";
 import { toast } from "react-toastify";
 import TechContent from "./components/Technologies/TechContent";
+import Footer from "./components/Footer";
 
 const fetchTechData = async (): Promise<TechDataTypes[]> => {
   const res = await fetch("/data.json");
@@ -49,7 +50,7 @@ function App() {
       <Hero />
       <TechContent />
 
-      <div className="container mx-auto px-4 lg:px-8 mt-8">
+      <div className="container mx-auto px-4 lg:px-8 mt-8 pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-3">
             <Suspense
@@ -76,6 +77,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </main>
   );
 }
