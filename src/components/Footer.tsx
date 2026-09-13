@@ -4,13 +4,12 @@ const Footer = () => {
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 text-left">
           <div className="flex flex-col items-start space-y-4 md:col-span-1">
-            <div className="flex items-center space-x-2">
-              <div className="bg-linear-to-tr from-purple-600 to-pink-500 text-white font-bold px-2.5 py-1.5 rounded-lg flex items-center justify-center text-sm shadow">
-                DS
-              </div>
-              <span className="text-xl font-bold tracking-tight">
-                Dev<span className="text-pink-500">Stack</span>
-              </span>
+            <div className="flex items-center">
+              <img
+                src="/logo-text.png"
+                alt="devstack-logo"
+                className="w-36 h-auto object-contain"
+              />
             </div>
             <p className="text-sm text-base-content/70 leading-relaxed">
               Curated tools, technologies, and resources for developers building
